@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Car Buyers</title>
+
+	<!-- DEFINING THE CHAR SET-->
+	<meta charset="utf-8">
+
+	<!--WEB FONTS REFERENCES-->
+	<!-- Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+
+	<!-- SETTING VIEWPORT-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS REFERENCE TO BOOTSTRAP -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" >
+	
+	<!-- EXTERNAL STYLES REFERENCE-->
+	<link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+
+</head>
+<body class="g-bg-color--scooter">
+    <!-- STICKY HEADER -->
+    <div class="header">
+        <div class="Navbar" id="Nav">
+            <div class="logo-img-new">
+                 <img id="logo-new" src="../assets/images/logo-3.png">
+            </div>
+            <div></div>
+            <div class="Navbar__Link Navbar__Link-toggle">
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+            <div class="Navbar__Items">
+                <div class="Navbar__Link">
+                    <a class="a-header" [routerLink]='["/"]' routerLinkActive="active">HOME</a>
+                </div>
+                <div class="Navbar__Link">
+                    <a class="a-header" [routerLink]='["/adminlog"]' routerLinkActive="active">ADMIN LOGIN</a>
+                </div>
+                <div class="Navbar__Link">
+                    <a class="a-header" [routerLink]='["/login"]' routerLinkActive="active">USER LOGIN</a>
+                </div>
+                <div class="Navbar__Link">
+                    <a class="a-header" [routerLink]='["/signup"]' routerLinkActive="active">SIGNUP</a>
+                </div>
+                <div class="Navbar__Link">
+                    <a class="a-header" [routerLink]='["/contact"]' routerLinkActive="active">CONTACT US</a>
+                </div>
+        </div>
+        </div>
+    </div>
+    <!-- END OF STICKY HEADER -->
+    
+   
+    <!-- CARS AVAILABLE -->
+    <div class="">
+    <div>
+        <h1 class="heading g-color--dark g-font-family--primary" id="cars_available">CARS AVAILABLE</h1>
+    </div>
+    <table align ="center" class="g-font-family--primary">
+        <tr>
+            <th>CAR NAME</th>
+            <th>CAR PHOTO</th>
+            <th>CAR ID</th> 
+        </tr>
+        <tr>
+            <td class="Data"><a [routerLink]='["/book"]' routerLinkActive="active" style="text-decoration: none; color: black;">Maruti Dzire</a></td>
+            <td><img src="../assets/images/2529780635_856c78ce2a_o.jpg" alt="Maruti Dzire"></td>
+            <td class="Data">#101</td>
+        </tr>
+            <td class="Data"><a [routerLink]='["/book2"]' routerLinkActive="active" style="text-decoration: none; color: black;">Maruti WagonR</a></td>
+            <td><img src="../assets/images//Maruti WagonR.jpg" alt="Maruti WagonR"></td>
+            <td class="Data">#102</td>
+        <tr>
+            <td class="Data"><a [routerLink]='["/book3"]' routerLinkActive="active" style="text-decoration: none; color: black;">Maruti Ciaz</a></td>
+            <td><img src="../assets/images/Maruti Ciaz.jpg" alt="Maruti Ciaz"></td>
+            <td class="Data">#103</td> 
+        </tr>
+        <tr>
+            <td class="Data"><a [routerLink]='["/book4"]' routerLinkActive="active" style="text-decoration: none; color: black;">Honda City</a></td>
+            <td><img src="../assets/images/Honda_City_(sixth_generation)_front.JPG" alt="Honda City"></td>
+            <td class="Data">#104</td> 
+        </tr>
+    </table>
+    <br><br>
+    </div> 
+     <!-- BOXES -->
+     <div class="two_box"> 
+        <div class="small_box">
+            <a [routerLink]='["/sellcar"]' routerLinkActive="active">
+            <img class="car_image" src="../assets/images/rent_car2.jpg">
+            <div>
+                <button type="button" class="button_add g-color--white">SELL CAR</button>
+            </div>
+            </a>
+        </div>
+    </div>
+    <!--END BOXES -->
+    <!--END CARS AVAILABLE -->
+
+    <!-- FOOTER-->
+    <footer class="g-bg-color--dark-light g-color--white-opacity">
+        <div class="foot">
+            <div class="padd__needed">
+                <img id="logo" src="../assets/images/logo-3.png">
+            </div>
+            <div class="connectivity padd__needed">
+                <div class="connect">
+                    <i class="fab fa-facebook-square"></i>
+                    <a class="a-footer" href="#">FACEBOOK</a>
+                </div>
+                <div class="connect">
+                    <i class="fab fa-linkedin"></i>
+                    <a class="a-footer" href="#">LINKED IN</a>
+                </div>
+                <div class="connect">
+                    <i class="fab fa-twitter-square"></i>
+                    <a class="a-footer" href="#">TWITTER</a>
+                </div>
+                <div class="connect">
+                    <i class="fab fa-instagram"></i>
+                    <a class="a-footer" href="#">INSTAGRAM</a>
+                </div>
+            </div>
+            <div class="padd__needed">
+                <h6 class="g-color--primary copyright">&copy CAR SELLERS</h6>
+            </div>
+        </div>
+    </footer>
+    <!--END OF FOOTER-->
+
+</body>
+</html>
